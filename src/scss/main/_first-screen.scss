@@ -1,0 +1,76 @@
+.first-screen {
+  min-height: 43.75rem;
+
+  background-color: $bg-color;
+
+  &__title {
+    margin: 9.625rem 0 3.375rem;
+
+    font-size: 3rem;
+    font-weight: $fw-medium;
+
+    @media (max-width: 740px) {
+      margin-top: 5rem;
+
+      text-align: center;
+
+      font-size: 2.1rem;
+    }
+
+    @media (max-width: 340px) {
+      text-align: center;
+
+      font-size: 1.7rem;
+    }
+  }
+
+  &__desc {
+    max-width: $width-desc;
+    margin-bottom: 4.0625rem;
+
+    text-align: justify;
+
+    color: $desc-color;
+
+    line-height: 1.8;
+
+    @media (max-width: 740px) {
+      text-align: center;
+    }
+
+    @media (max-width: 340px) {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    width: 14.0625rem;
+    height: 4.0625rem;
+    padding: 0.625rem;
+
+    cursor: pointer;
+    transition: $transition;
+    text-align: center;
+    vertical-align: center;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+
+    color: $white-color;
+    border: 0.125rem solid $blue-color;
+    background-color: $blue-color;
+
+    &:focus,
+    &:hover {
+      color: $blue-color;
+      background-color: $white-color;
+    }
+  }
+
+  & .container {
+    @media (max-width: 740px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.experience {
+  background-color: $blue-color;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin: 6.25rem 0;
+
+    gap: 2.5rem;
+
+    @media (max-width: 680px) {
+      margin-right: 5rem;
+      margin-left: 5rem;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 0.3125rem;
+
+    gap: 1.25rem;
+
+    @media (max-width: 1180px) {
+      flex-basis: 25%;
+    }
+  }
+
+  &__item-image {
+    width: 3.125rem;
+    height: 3.125rem;
+
+    background-image: url(../../assets/images/number-img.svg);
+  }
+
+  &__item-desc {
+    margin-top: 0.625rem;
+
+    color: $white-color;
+
+    font-size: 1.3rem;
+    font-weight: $fw-medium;
+  }
+
+  &__item-desc span {
+    display: block;
+
+    margin-top: 0.625rem;
+
+    font-size: 1rem;
+    font-weight: $fw-normal;
+  }
+
+  @media (max-width: 1180px) {
+    flex-basis: 25%;
+    justify-content: center;
+
+    gap: 1.25rem;
+  }
+}

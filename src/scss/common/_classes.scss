@@ -1,0 +1,72 @@
+.container {
+  max-width: 70.625rem;
+  margin: 0 auto;
+  padding: 0.625rem;
+
+  @media (max-width: 1180px) {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0.625rem 2.5rem;
+  }
+
+  @media (max-width: 740px) {
+    padding: 0.625rem 1.25rem;
+  }
+
+  @media (max-width: 680px) {
+    max-width: 40.625rem;
+  }
+}
+
+@mixin section-title {
+  margin: 3.75rem 0 3.25rem;
+
+  text-align: center;
+  letter-spacing: 0.125rem;
+
+  font-size: 2rem;
+}
+
+@mixin section-desc {
+  max-width: $width-desc;
+  margin: 0 auto 6.25rem;
+
+  text-align: center;
+
+  color: $desc-color;
+
+  line-height: 1.8;
+}
+
+@mixin burger-el() {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: $blue-color;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bgi {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  bottom: 0;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+}

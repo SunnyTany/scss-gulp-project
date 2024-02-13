@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple site</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- start fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- end fonts -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- start FIRST SCREEN -->
+  <section class="first-screen" id="firstscreen">
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav">
+
+          <!-- start hamburger -->
+          <input class="header__toggle" id="toggle" type="checkbox">
+
+          <label class="header__hamburger" for="toggle">
+            <div class="header__top-bun"></div>
+            <div class="header__meat"></div>
+            <div class="header__bottom-bun"></div>
+          </label>
+
+          <div class="header__hamb-nav">
+            <div class="header__humb-nav-wrapper">
+              <nav class="header__hamb-list">
+                <li class="header__hamb-item">
+                  <a class="header__hamb-link" href="#firstscreen">ГЛАВНАЯ</a>
+                </li>
+                <li class="header__hamb-item">
+                  <a class="header__hamb-link" href="#about">ОБ АВТОРЕ</a>
+                </li>
+                <li class="header__hamb-item">
+                  <a class="header__hamb-link" href="#experience">РАБОТЫ</a>
+                </li>
+                <li class="header__hamb-item">
+                  <a class="header__hamb-link" href="#video">ПРОЦЕСС</a>
+                </li>
+                <li class="header__hamb-item">
+                  <a class="header__hamb-link" href="#footer">КОНТАКТЫ</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+          <!-- end hamburger -->
+
+          <menu class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#firstscreen">ГЛАВНАЯ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#about">ОБ АВТОРЕ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#experience">РАБОТЫ</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#video">ПРОЦЕСС</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#footer">КОНТАКТЫ</a>
+            </li>
+          </menu>
+
+        </nav>
+      </header>
+
+      <h1 class="first-screen__title">Дизайн и верстка</h1>
+      <p class="first-screen__desc">
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+        "рыбой" для текстов на латинице с начала XVI века.
+      </p>
+      <button class="first-screen__btn" name="first-screen__btn">НАПИСАТЬ МНЕ</button>
+    </div>
+  </section>
+  <!-- end FIRST SCREEN -->
+
+  <!-- start ABOUT ME -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="about__title">Обо мне</h2>
+      <p class="about__desc">
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+        "рыбой" для текстов на латинице с начала XVI века.
+      </p>
+    </div>
+  </section>
+  <!-- end ABOUT ME -->
+
+  <!-- start EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="experience__title visually-hidden">Numbers</h2>
+      <div class="experience__items">
+        <figure class="experience__item">
+          <div class="experience__item-image bgi"></div>
+          <p class="experience__item-desc">
+            40+<span>проектов</span>
+          </p>
+        </figure>
+        <figure class="experience__item">
+          <div class="experience__item-image bgi"></div>
+          <p class="experience__item-desc">
+            40+<span>проектов</span>
+          </p>
+        </figure>
+        <figure class="experience__item">
+          <div class="experience__item-image bgi"></div>
+          <p class="experience__item-desc">
+            40+<span>проектов</span>
+          </p>
+        </figure>
+        <figure class="experience__item">
+          <div class="experience__item-image bgi"></div>
+          <p class="experience__item-desc">
+            40+<span>проектов</span>
+          </p>
+        </figure>
+        <figure class="experience__item">
+          <div class="experience__item-image bgi"></div>
+          <p class="experience__item-desc">
+            40+<span>проектов</span>
+          </p>
+        </figure>
+        <figure class="experience__item">
+          <div class="experience__item-image bgi"></div>
+          <p class="experience__item-desc">
+            40+<span>проектов</span>
+          </p>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <!-- end EXPERIENCE -->
+
+  <!-- start VIDEO -->
+  <section class="video" id="video">
+    <div class="container">
+      <h2 class="video__title">Как я работаю</h2>
+      <p class="video__desc">
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+        "рыбой" для текстов на латинице с начала XVI века.
+      </p>
+      <div class="video__video-block bgi">
+        <iframe src="https://www.youtube.com/embed/8tjrY04jUsE"
+          title="UNIT_01_UA (20.10.2023) Fullstack JS (24.11.2023)" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <!-- end VIDEO -->
+
+  <!-- start FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p class="footer__name">Иванов Иван</p>
+      <p class="footer__copyright">(с) 2018. Все права защищены.</p>
+    </div>
+  </footer>
+  <!-- end FOOTER -->
+
+</body>
+
+</html>
